@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Parsix</title>
+</head>
+<body>
+  <header class="header">
+    <div class="header__container">
+      <div class="header__left">
+        <a href="#" class="header__logo">
+          <img src="img/logo.svg" alt="logo" class="header__logo-img">
+          <span class="header__logo-text">Pars<span class="header__logo-span">ix</span></span>
+        </a>
+        <div class="header__dropdown">
+          <span class="header__dropdown-text">недвижимость</span>
+          <img src="img/chevron.svg" alt="" class="header__dropdown-icon">
+          <div class="header__dropdown-menu-wrapper">
+            <div class="header__dropdown-menu">
+              <ul class="header__dropdown-menu-list">
+                <li class="header__dropdown-menu-item">
+                  <a href="#" class="header__dropdown-menu-link">
+                    <span class="header__dropdown-menu-info">
+                      <img src="img/logo-blue.svg" alt="" class="header__dropdown-menu-logo">
+                      <span class="header__dropdown-menu-title header__dropdown-menu-title--blue">Недвижимость</span>
+                    </span>
+                    <span class="header__dropdown-menu-icons">
+                      <img src="img/avito-frame.svg" alt="" class="header__dropdown-menu-icon">
+                      <img src="img/cian-frame.svg" alt="" class="header__dropdown-menu-icon">
+                      <img src="img/paper-frame.svg" alt="" class="header__dropdown-menu-icon">
+                    </span>
+                    <span class="header__dropdown-menu-decor"></span>
+                  </a>
+                </li>
+                <li class="header__dropdown-menu-item">
+                  <a href="#" class="header__dropdown-menu-link">
+                    <span class="header__dropdown-menu-info">
+                      <img src="img/logo-red.svg" alt="" class="header__dropdown-menu-logo">
+                      <span class="header__dropdown-menu-title header__dropdown-menu-title--red">Автомобили</span>
+                    </span>
+                    <span class="header__dropdown-menu-icons">
+                      <img src="img/auto-frame.svg" alt="" class="header__dropdown-menu-icon">
+                      <img src="img/auto-frame-secondary.png" alt="" class="header__dropdown-menu-icon">
+                    </span>
+                    <span class="header__dropdown-menu-subtitle">Купить</span>
+                  </a>
+                </li>
+                <li class="header__dropdown-menu-item">
+                  <a href="#" class="header__dropdown-menu-link">
+                    <span class="header__dropdown-menu-info">
+                      <img src="img/logo-green.svg" alt="" class="header__dropdown-menu-logo">
+                      <span class="header__dropdown-menu-title header__dropdown-menu-title--green">Электроника</span>
+                    </span>
+                    <span class="header__dropdown-menu-icons">
+                      <img src="img/avito-frame.svg" alt="" class="header__dropdown-menu-icon">
+                    </span>
+                    <span class="header__dropdown-menu-subtitle">Купить</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="header__right">
+        <div class="header__info">
+          <div class="header__right-group">
+            <div class="header__overload">
+              <span class="header__overload-text">Загруженность рынка</span>
+              <img class="header__overload-img" src="img/overload.svg" alt="">
+            </div>
+            <button class="header__activity">
+              <span>Моя активность</span>
+              <img src="img/chevron.svg" alt="" class="header__activity-icon">
+            </button>
+          </div>
+          <div class="header__user">
+            <button class="header__user-notifications">
+              <img src="img/bell.svg" alt="">
+            </button>
+            <button class="header__user-profile">
+              <span class="header__user-profile-img">
+                <img src="img/profile.png" alt="">
+              </span>
+              <span class="header__user-name">Егор Савин</span>
+            </button>
+            <span class="tooltip">Скоро будет доступно</span>
+          </div>
+        </div>
+        <button class="header__login">
+          <img src="img/login.svg" alt="">
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <nav id="nav" class="nav">
+    <ul class="nav__list">
+      <li class="nav__item">
+        <a href="index.html" class="nav__link nav__link--active">
+          <svg width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M9.68184 2.64258H7.30684C4.56934 2.64258 3.13184 4.08008 3.13184 6.80508V9.18008C3.13184 11.9051 4.56934 13.3426 7.29434 13.3426H9.66934C12.3943 13.3426 13.8318 11.9051 13.8318 9.18008V6.80508C13.8443 4.08008 12.4068 2.64258 9.68184 2.64258Z" fill="#494949"/>
+            <path d="M23.9691 2.64258H21.5941C18.8691 2.64258 17.4316 4.08008 17.4316 6.80508V9.18008C17.4316 11.9051 18.8691 13.3426 21.5941 13.3426H23.9691C26.6941 13.3426 28.1316 11.9051 28.1316 9.18008V6.80508C28.1316 4.08008 26.6941 2.64258 23.9691 2.64258Z" fill="#494949"/>
+            <path d="M23.9691 16.9301H21.5941C18.8691 16.9301 17.4316 18.3676 17.4316 21.0926V23.4676C17.4316 26.1926 18.8691 27.6301 21.5941 27.6301H23.9691C26.6941 27.6301 28.1316 26.1926 28.1316 23.4676V21.0926C28.1316 18.3676 26.6941 16.9301 23.9691 16.9301Z" fill="#494949"/>
+            <path d="M9.68184 16.9301H7.30684C4.56934 16.9301 3.13184 18.3676 3.13184 21.0926V23.4676C3.13184 26.2051 4.56934 27.6426 7.29434 27.6426H9.66934C12.3943 27.6426 13.8318 26.2051 13.8318 23.4801V21.1051C13.8443 18.3676 12.4068 16.9301 9.68184 16.9301Z" fill="#494949"/>
+          </svg>     
+        </a>
+      </li>
+      <li class="nav__item">
+        <a href="#" class="nav__link">
+          <svg width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M16.0942 11.2426H22.6567" stroke="#494949" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M8.60693 11.2426L9.54443 12.1801L12.3569 9.36758" stroke="#494949" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M16.0942 19.9926H22.6567" stroke="#494949" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M8.60693 19.9926L9.54443 20.9301L12.3569 18.1176" stroke="#494949" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M11.8818 27.6426H19.3818C25.6318 27.6426 28.1318 25.1426 28.1318 18.8926V11.3926C28.1318 5.14258 25.6318 2.64258 19.3818 2.64258H11.8818C5.63184 2.64258 3.13184 5.14258 3.13184 11.3926V18.8926C3.13184 25.1426 5.63184 27.6426 11.8818 27.6426Z" stroke="#494949" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <span class="tooltip">Скоро будет доступно</span>
+        </a>
+      </li>
+      <li class="nav__item">
+        <a href="#" class="nav__link">
+          <svg width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M28.1318 12.6426V16.3926C28.1318 21.3926 25.6318 23.8926 20.6318 23.8926H20.0068C19.6193 23.8926 19.2443 24.0801 19.0068 24.3926L17.1318 26.8926C16.3068 27.9926 14.9568 27.9926 14.1318 26.8926L12.2568 24.3926C12.0568 24.1176 11.5943 23.8926 11.2568 23.8926H10.6318C5.63184 23.8926 3.13184 22.6426 3.13184 16.3926V10.1426C3.13184 5.14258 5.63184 2.64258 10.6318 2.64258H18.1318" stroke="#494949" stroke-width="1.6" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M25.0068 8.89258C26.7327 8.89258 28.1318 7.49347 28.1318 5.76758C28.1318 4.04169 26.7327 2.64258 25.0068 2.64258C23.2809 2.64258 21.8818 4.04169 21.8818 5.76758C21.8818 7.49347 23.2809 8.89258 25.0068 8.89258Z" stroke="#494949" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M20.6274 13.8926H20.6386" stroke="#494949" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M15.6262 13.8926H15.6374" stroke="#494949" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M10.625 13.8926H10.6362" stroke="#494949" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <span class="tooltip">Скоро будет доступно</span>
+        </a>
+      </li>
+      <li class="nav__item">
+        <a href="#" class="nav__link">
+          <svg width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M4.38184 11.5301V18.7426C4.38184 21.3926 4.38184 21.3926 6.88184 23.0801L13.7568 27.0551C14.7943 27.6551 16.4818 27.6551 17.5068 27.0551L24.3818 23.0801C26.8818 21.3926 26.8818 21.3926 26.8818 18.7551V11.5301C26.8818 8.89257 26.8818 8.89258 24.3818 7.20508L17.5068 3.23008C16.4818 2.63008 14.7943 2.63008 13.7568 3.23008L6.88184 7.20508C4.38184 8.89258 4.38184 8.89257 4.38184 11.5301Z" stroke="#494949" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M15.6318 18.8926C17.7029 18.8926 19.3818 17.2136 19.3818 15.1426C19.3818 13.0715 17.7029 11.3926 15.6318 11.3926C13.5608 11.3926 11.8818 13.0715 11.8818 15.1426C11.8818 17.2136 13.5608 18.8926 15.6318 18.8926Z" stroke="#494949" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <span class="tooltip">Скоро будет доступно</span>
+        </a>
+      </li>
+      <li class="nav__item">
+        <a href="#" class="nav__link">
+          <svg width="27" height="32" viewBox="0 0 27 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M25.6318 8.64258V23.6426C25.6318 29.6426 24.1318 31.1426 18.1318 31.1426H9.13184C3.13184 31.1426 1.63184 29.6426 1.63184 23.6426V8.64258C1.63184 2.64258 3.13184 1.14258 9.13184 1.14258H18.1318C24.1318 1.14258 25.6318 2.64258 25.6318 8.64258Z" stroke="#494949" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M16.6318 6.39258H10.6318" stroke="#494949" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M13.6316 26.7926C14.9157 26.7926 15.9566 25.7516 15.9566 24.4676C15.9566 23.1835 14.9157 22.1426 13.6316 22.1426C12.3476 22.1426 11.3066 23.1835 11.3066 24.4676C11.3066 25.7516 12.3476 26.7926 13.6316 26.7926Z" stroke="#494949" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <span class="tooltip">Скоро будет доступно</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  <div class="wrapper" id="wrapper">
+    <main class="main">
+      <section class="list">
+        <div class="container">
+          <h1 class="list__title">Новые объявления</h1>
+
+          <div class="list__panel">
+            <div class="list__panel-left">
+              <div class="list__search">
+                <img src="img/search.svg" alt="" class="list__search-icon">
+                <input placeholder="Поиск объявлений" type="text" class="list__search-input">
+              </div>
+              <button class="list__btn">
+                <img src="img/note.svg" alt="" class="list__btn-icon">
+                <span class="list__btn-text">Дата</span>
+              </button>
+              <button class="list__btn">
+                <img src="img/share-light.svg" alt="" class="list__btn-icon">
+                <span class="list__btn-text">Сервисы</span>
+              </button>
+              <button class="list__btn">
+                <img src="img/sort.svg" alt="" class="list__btn-icon">
+                <span class="list__btn-text">Изменить фильтр</span>
+              </button>
+              <span class="tooltip">Скоро будет доступно</span>
+            </div>
+
+            <div class="list__panel-right">
+              <div class="list__status">
+                <p class="list__status-text">Статусы</p>
+                <label class="checkgroup">
+                  <input class="checkbox" type="checkbox">
+                  <span class="list__status-checkmark list__status-checkmark--danger">
+                    <img src="img/exclamation.svg" alt="">
+                  </span>
+                </label>
+                <label class="checkgroup">
+                  <input class="checkbox" type="checkbox">
+                  <span class="list__status-checkmark list__status-checkmark--info">
+                    <img src="img/auto.svg" alt="">
+                  </span>
+                </label>
+                <label class="checkgroup">
+                  <input class="checkbox" type="checkbox">
+                  <span class="list__status-checkmark list__status-checkmark--success">
+                    <img src="img/verify.svg" alt="">
+                  </span>
+                </label>
+              </div>
+
+              <div class="list__box">
+                <label class="toggle-label" for="toggle">
+                  <input type="checkbox" id="toggle" class="toggle-input"></input>
+                  <div class="toggle-switch"></div>
+                </label>
+                <p class="list__box-text">Авто-звонок</p>
+                <span class="tooltip">Скоро будет доступно</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="list__bar">
+            <div class="list__filter">
+              <div class="list__filter-num">
+                <p class="list__filter-text">Показ на странице:</p>
+                <button class="list__filter-btn">
+                  <span>50</span>
+                  <img src="img/updown.svg" alt="" class="list__filter-btn-icon">
+                </button>
+              </div>
+              <button class="list__filter-dropdown">
+                <span>Сортировка</span>
+                <img src="img/chevron-gray.svg" alt="" class="list__filter-dropdown-icon">
+              </button>
+              <span class="tooltip">Скоро будет доступно</span>
+            </div>
+
+            <button class="list__view-btn">
+              <span>Изменить вид</span>
+              <img src="img/row.svg" alt="" class="list__view-icon">
+            </button>
+          </div>
+
+          <div class="table-wrapper">
+            <table class="table">
+              <thead class="table__head">
+                <tr>
+                  <th class="table__icon"><img src="img/clock.svg" alt=""></th>
+                  <th class="table__icon"><img src="img/share.svg" alt=""></th>
+                  <th class="table__header">Наименование</th>
+                  <th class="table__header">Адрес</th>
+                  <th class="table__header">Цена</th>
+                  <th class="table__header">Телефон</th>
+                  <th class="table__header">Функции</th>
+                  <th class="table__header">Статус</th>
+                </tr>
+              </thead>
+              <tbody class="table__body">
+                <tr class="table__data">
+                  <td class="table__single">13:58</td>
+                  <td class="table__single"><img src="img/avito.svg" alt=""></td>
+                  <td class="table__text">3-к. квартира, 65,5 м², 13/17 эт.</td>
+                  <td class="table__text">Московская обл., Лыткарино, 6-й мкр-н, 15Б</td>
+                  <td class="table__text">60000</td>
+                  <td class="table__phone">+79773129356</td>
+                  <td class="table__func">
+                    <div class="table__func-items">
+                      <a href="#" class="table__func-link"><img src="img/call.svg" alt="" class="table__func-icon"></a>
+                      <a href="#" class="table__func-link"><img src="img/chain.svg" alt="" class="table__func-icon"></a>
+                      <a href="#" class="table__func-link"><img src="img/send.svg" alt="" class="table__func-icon"></a>
+                    </div>
+                  </td>
+                  <td class="table__status">
+                    <div class="table__status-items">
+                      <span class="table__status-icon table__status-icon--danger"><img src="img/exclamation.svg" alt=""></span>
+                      <span class="table__status-icon table__status-icon--info"><img src="img/auto.svg" alt=""></span>
+                      <span class="table__status-icon table__status-icon--success"><img src="img/verify.svg" alt=""></span>
+                    </div>
+                  </td>
+                </tr>
+                <tr class="table__data">
+                  <td class="table__single">13:59</td>
+                  <td class="table__single"><img src="img/avito.svg" alt=""></td>
+                  <td class="table__text">3-к. квартира, 65,5 м², 13/17 эт.</td>
+                  <td class="table__text">Московская обл., Лыткарино, 6-й мкр-н, 15Б</td>
+                  <td class="table__text">60000</td>
+                  <td class="table__phone">+79773129356</td>
+                  <td class="table__func">
+                    <div class="table__func-items">
+                      <a href="#" class="table__func-link"><img src="img/call.svg" alt="" class="table__func-icon"></a>
+                      <a href="#" class="table__func-link"><img src="img/chain.svg" alt="" class="table__func-icon"></a>
+                      <a href="#" class="table__func-link"><img src="img/send.svg" alt="" class="table__func-icon"></a>
+                    </div>
+                  </td>
+                  <td class="table__status">
+                    <div class="table__status-items">
+                      <span class="table__status-icon"><img src="img/exclamation.svg" alt=""></span>
+                      <span class="table__status-icon"><img src="img/auto.svg" alt=""></span>
+                      <span class="table__status-icon"><img src="img/verify.svg" alt=""></span>
+                    </div>
+                  </td>
+                </tr>
+                <tr class="table__data">
+                  <td class="table__single">13:59</td>
+                  <td class="table__single"><img src="img/avito.svg" alt=""></td>
+                  <td class="table__text">3-к. квартира, 65,5 м², 13/17 эт.</td>
+                  <td class="table__text">Московская обл., Лыткарино, 6-й мкр-н, 15Б</td>
+                  <td class="table__text">60000</td>
+                  <td class="table__phone">+79773129356</td>
+                  <td class="table__func">
+                    <div class="table__func-items">
+                      <a href="#" class="table__func-link"><img src="img/call.svg" alt="" class="table__func-icon"></a>
+                      <a href="#" class="table__func-link"><img src="img/chain.svg" alt="" class="table__func-icon"></a>
+                      <a href="#" class="table__func-link"><img src="img/send.svg" alt="" class="table__func-icon"></a>
+                    </div>
+                  </td>
+                  <td class="table__status">
+                    <div class="table__status-items">
+                      <span class="table__status-icon"><img src="img/exclamation.svg" alt=""></span>
+                      <span class="table__status-icon"><img src="img/auto.svg" alt=""></span>
+                      <span class="table__status-icon"><img src="img/verify.svg" alt=""></span>
+                    </div>
+                  </td>
+                </tr>
+                <tr class="table__data">
+                  <td class="table__single">13:59</td>
+                  <td class="table__single"><img src="img/avito.svg" alt=""></td>
+                  <td class="table__text">3-к. квартира, 65,5 м², 13/17 эт.</td>
+                  <td class="table__text">Московская обл., Лыткарино, 6-й мкр-н, 15Б</td>
+                  <td class="table__text">60000</td>
+                  <td class="table__phone">+79773129356</td>
+                  <td class="table__func">
+                    <div class="table__func-items">
+                      <a href="#" class="table__func-link"><img src="img/call.svg" alt="" class="table__func-icon"></a>
+                      <a href="#" class="table__func-link"><img src="img/chain.svg" alt="" class="table__func-icon"></a>
+                      <a href="#" class="table__func-link"><img src="img/send.svg" alt="" class="table__func-icon"></a>
+                    </div>
+                  </td>
+                  <td class="table__status">
+                    <div class="table__status-items">
+                      <span class="table__status-icon"><img src="img/exclamation.svg" alt=""></span>
+                      <span class="table__status-icon"><img src="img/auto.svg" alt=""></span>
+                      <span class="table__status-icon"><img src="img/verify.svg" alt=""></span>
+                    </div>
+                  </td>
+                </tr>
+                <tr class="table__data">
+                  <td class="table__single">13:59</td>
+                  <td class="table__single"><img src="img/avito.svg" alt=""></td>
+                  <td class="table__text">3-к. квартира, 65,5 м², 13/17 эт.</td>
+                  <td class="table__text">Московская обл., Лыткарино, 6-й мкр-н, 15Б</td>
+                  <td class="table__text">60000</td>
+                  <td class="table__phone">+79773129356</td>
+                  <td class="table__func">
+                    <div class="table__func-items">
+                      <a href="#" class="table__func-link"><img src="img/call.svg" alt="" class="table__func-icon"></a>
+                      <a href="#" class="table__func-link"><img src="img/chain.svg" alt="" class="table__func-icon"></a>
+                      <a href="#" class="table__func-link"><img src="img/send.svg" alt="" class="table__func-icon"></a>
+                    </div>
+                  </td>
+                  <td class="table__status">
+                    <div class="table__status-items">
+                      <span class="table__status-icon"><img src="img/exclamation.svg" alt=""></span>
+                      <span class="table__status-icon"><img src="img/auto.svg" alt=""></span>
+                      <span class="table__status-icon"><img src="img/verify.svg" alt=""></span>
+                    </div>
+                  </td>
+                </tr>
+                <tr class="table__data">
+                  <td class="table__single">13:59</td>
+                  <td class="table__single"><img src="img/avito.svg" alt=""></td>
+                  <td class="table__text">3-к. квартира, 65,5 м², 13/17 эт.</td>
+                  <td class="table__text">Московская обл., Лыткарино, 6-й мкр-н, 15Б</td>
+                  <td class="table__text">60000</td>
+                  <td class="table__phone">+79773129356</td>
+                  <td class="table__func">
+                    <div class="table__func-items">
+                      <a href="#" class="table__func-link"><img src="img/call.svg" alt="" class="table__func-icon"></a>
+                      <a href="#" class="table__func-link"><img src="img/chain.svg" alt="" class="table__func-icon"></a>
+                      <a href="#" class="table__func-link"><img src="img/send.svg" alt="" class="table__func-icon"></a>
+                    </div>
+                  </td>
+                  <td class="table__status">
+                    <div class="table__status-items">
+                      <span class="table__status-icon"><img src="img/exclamation.svg" alt=""></span>
+                      <span class="table__status-icon"><img src="img/auto.svg" alt=""></span>
+                      <span class="table__status-icon"><img src="img/verify.svg" alt=""></span>
+                    </div>
+                  </td>
+                </tr>
+                <tr class="table__data">
+                  <td class="table__single">13:59</td>
+                  <td class="table__single"><img src="img/avito.svg" alt=""></td>
+                  <td class="table__text">3-к. квартира, 65,5 м², 13/17 эт.</td>
+                  <td class="table__text">Московская обл., Лыткарино, 6-й мкр-н, 15Б</td>
+                  <td class="table__text">60000</td>
+                  <td class="table__phone">+79773129356</td>
+                  <td class="table__func">
+                    <div class="table__func-items">
+                      <a href="#" class="table__func-link"><img src="img/call.svg" alt="" class="table__func-icon"></a>
+                      <a href="#" class="table__func-link"><img src="img/chain.svg" alt="" class="table__func-icon"></a>
+                      <a href="#" class="table__func-link"><img src="img/send.svg" alt="" class="table__func-icon"></a>
+                    </div>
+                  </td>
+                  <td class="table__status">
+                    <div class="table__status-items">
+                      <span class="table__status-icon"><img src="img/exclamation.svg" alt=""></span>
+                      <span class="table__status-icon"><img src="img/auto.svg" alt=""></span>
+                      <span class="table__status-icon"><img src="img/verify.svg" alt=""></span>
+                    </div>
+                  </td>
+                </tr>
+                <tr class="table__data">
+                  <td class="table__single">13:59</td>
+                  <td class="table__single"><img src="img/avito.svg" alt=""></td>
+                  <td class="table__text">3-к. квартира, 65,5 м², 13/17 эт.</td>
+                  <td class="table__text">Московская обл., Лыткарино, 6-й мкр-н, 15Б</td>
+                  <td class="table__text">60000</td>
+                  <td class="table__phone">+79773129356</td>
+                  <td class="table__func">
+                    <div class="table__func-items">
+                      <a href="#" class="table__func-link"><img src="img/call.svg" alt="" class="table__func-icon"></a>
+                      <a href="#" class="table__func-link"><img src="img/chain.svg" alt="" class="table__func-icon"></a>
+                      <a href="#" class="table__func-link"><img src="img/send.svg" alt="" class="table__func-icon"></a>
+                    </div>
+                  </td>
+                  <td class="table__status">
+                    <div class="table__status-items">
+                      <span class="table__status-icon"><img src="img/exclamation.svg" alt=""></span>
+                      <span class="table__status-icon"><img src="img/auto.svg" alt=""></span>
+                      <span class="table__status-icon"><img src="img/verify.svg" alt=""></span>
+                    </div>
+                  </td>
+                </tr>
+                <tr class="table__data">
+                  <td class="table__single">13:59</td>
+                  <td class="table__single"><img src="img/avito.svg" alt=""></td>
+                  <td class="table__text">3-к. квартира, 65,5 м², 13/17 эт.</td>
+                  <td class="table__text">Московская обл., Лыткарино, 6-й мкр-н, 15Б</td>
+                  <td class="table__text">60000</td>
+                  <td class="table__phone">+79773129356</td>
+                  <td class="table__func">
+                    <div class="table__func-items">
+                      <a href="#" class="table__func-link"><img src="img/call.svg" alt="" class="table__func-icon"></a>
+                      <a href="#" class="table__func-link"><img src="img/chain.svg" alt="" class="table__func-icon"></a>
+                      <a href="#" class="table__func-link"><img src="img/send.svg" alt="" class="table__func-icon"></a>
+                    </div>
+                  </td>
+                  <td class="table__status">
+                    <div class="table__status-items">
+                      <span class="table__status-icon"><img src="img/exclamation.svg" alt=""></span>
+                      <span class="table__status-icon"><img src="img/auto.svg" alt=""></span>
+                      <span class="table__status-icon"><img src="img/verify.svg" alt=""></span>
+                    </div>
+                  </td>
+                </tr>
+                <tr class="table__data">
+                  <td class="table__single">13:59</td>
+                  <td class="table__single"><img src="img/avito.svg" alt=""></td>
+                  <td class="table__text">3-к. квартира, 65,5 м², 13/17 эт.</td>
+                  <td class="table__text">Московская обл., Лыткарино, 6-й мкр-н, 15Б</td>
+                  <td class="table__text">60000</td>
+                  <td class="table__phone">+79773129356</td>
+                  <td class="table__func">
+                    <div class="table__func-items">
+                      <a href="#" class="table__func-link"><img src="img/call.svg" alt="" class="table__func-icon"></a>
+                      <a href="#" class="table__func-link"><img src="img/chain.svg" alt="" class="table__func-icon"></a>
+                      <a href="#" class="table__func-link"><img src="img/send.svg" alt="" class="table__func-icon"></a>
+                    </div>
+                  </td>
+                  <td class="table__status">
+                    <div class="table__status-items">
+                      <span class="table__status-icon"><img src="img/exclamation.svg" alt=""></span>
+                      <span class="table__status-icon"><img src="img/auto.svg" alt=""></span>
+                      <span class="table__status-icon"><img src="img/verify.svg" alt=""></span>
+                    </div>
+                  </td>
+                </tr>
+                <tr class="table__data">
+                  <td class="table__single">13:59</td>
+                  <td class="table__single"><img src="img/avito.svg" alt=""></td>
+                  <td class="table__text">3-к. квартира, 65,5 м², 13/17 эт.</td>
+                  <td class="table__text">Московская обл., Лыткарино, 6-й мкр-н, 15Б</td>
+                  <td class="table__text">60000</td>
+                  <td class="table__phone">+79773129356</td>
+                  <td class="table__func">
+                    <div class="table__func-items">
+                      <a href="#" class="table__func-link"><img src="img/call.svg" alt="" class="table__func-icon"></a>
+                      <a href="#" class="table__func-link"><img src="img/chain.svg" alt="" class="table__func-icon"></a>
+                      <a href="#" class="table__func-link"><img src="img/send.svg" alt="" class="table__func-icon"></a>
+                    </div>
+                  </td>
+                  <td class="table__status">
+                    <div class="table__status-items">
+                      <span class="table__status-icon"><img src="img/exclamation.svg" alt=""></span>
+                      <span class="table__status-icon"><img src="img/auto.svg" alt=""></span>
+                      <span class="table__status-icon"><img src="img/verify.svg" alt=""></span>
+                    </div>
+                  </td>
+                </tr>
+                <tr class="table__data">
+                  <td class="table__single">13:59</td>
+                  <td class="table__single"><img src="img/avito.svg" alt=""></td>
+                  <td class="table__text">3-к. квартира, 65,5 м², 13/17 эт.</td>
+                  <td class="table__text">Московская обл., Лыткарино, 6-й мкр-н, 15Б</td>
+                  <td class="table__text">60000</td>
+                  <td class="table__phone">+79773129356</td>
+                  <td class="table__func">
+                    <div class="table__func-items">
+                      <a href="#" class="table__func-link"><img src="img/call.svg" alt="" class="table__func-icon"></a>
+                      <a href="#" class="table__func-link"><img src="img/chain.svg" alt="" class="table__func-icon"></a>
+                      <a href="#" class="table__func-link"><img src="img/send.svg" alt="" class="table__func-icon"></a>
+                    </div>
+                  </td>
+                  <td class="table__status">
+                    <div class="table__status-items">
+                      <span class="table__status-icon"><img src="img/exclamation.svg" alt=""></span>
+                      <span class="table__status-icon"><img src="img/auto.svg" alt=""></span>
+                      <span class="table__status-icon"><img src="img/verify.svg" alt=""></span>
+                    </div>
+                  </td>
+                </tr>
+                <tr class="table__data">
+                  <td class="table__single">13:59</td>
+                  <td class="table__single"><img src="img/avito.svg" alt=""></td>
+                  <td class="table__text">3-к. квартира, 65,5 м², 13/17 эт.</td>
+                  <td class="table__text">Московская обл., Лыткарино, 6-й мкр-н, 15Б</td>
+                  <td class="table__text">60000</td>
+                  <td class="table__phone">+79773129356</td>
+                  <td class="table__func">
+                    <div class="table__func-items">
+                      <a href="#" class="table__func-link"><img src="img/call.svg" alt="" class="table__func-icon"></a>
+                      <a href="#" class="table__func-link"><img src="img/chain.svg" alt="" class="table__func-icon"></a>
+                      <a href="#" class="table__func-link"><img src="img/send.svg" alt="" class="table__func-icon"></a>
+                    </div>
+                  </td>
+                  <td class="table__status">
+                    <div class="table__status-items">
+                      <span class="table__status-icon"><img src="img/exclamation.svg" alt=""></span>
+                      <span class="table__status-icon"><img src="img/auto.svg" alt=""></span>
+                      <span class="table__status-icon"><img src="img/verify.svg" alt=""></span>
+                    </div>
+                  </td>
+                </tr>
+
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
